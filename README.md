@@ -73,7 +73,7 @@ Copepods — unlike terrestrial taxa — often show a **bimodal or reverse LDG**
 
 ```
 .
-├── copepod_lgd.py                 # Main analysis script
+├── main.py                        # Main analysis script
 ├── copepod_quadratic_fit.png      # Output figure
 ├── copepod_quadratic_fit.csv      # Output data table
 └── README.md
