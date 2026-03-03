@@ -2,8 +2,6 @@
 
 A data pipeline and statistical analysis that fetches global copepod occurrence records from OBIS, bins them by latitude, and fits a quadratic model to explore the **Latitudinal Diversity Gradient (LDG)**.
 
----
-
 ## Output
 
 | File | Description |
@@ -17,7 +15,6 @@ $$S(\phi) = a\phi^2 + b\phi + c$$
 
 where $\phi$ is latitude in degrees. The peak richness latitude is estimated at $\hat{\phi} = -b / 2a$.
 
----
 
 ## Requirements
 
@@ -38,17 +35,12 @@ pip install numpy pandas matplotlib pyobis
 pip install rose-pine-matplotlib
 ```
 
-> **Note:** The Rose Pine Moon theme (`rose-pine-matplotlib`) must be importable as a `.mplstyle` file at `rose-pine-matplotlib/themes/rose-pine-moon.mplstyle`. Remove or replace the `plt.style.use(...)` line if the package is unavailable.
-
----
-
 ##  Usage
 
 ```bash
 python main.py
 ```
 
----
 
 ## Methodology
 
@@ -71,13 +63,11 @@ Model diagnostics:
 | RMSE | Root mean squared error |
 | SE | Standard errors of coefficients via the covariance matrix |
 
----
 
 ## Interpretation
 
 Copepods — unlike terrestrial taxa — often show a **bimodal or reverse LDG**, with higher diversity at mid-to-high latitudes in productive upwelling zones. The quadratic fit captures the overall curvature, and the residual plot highlights where the model over- or under-predicts richness.
 
----
 
 ## Structure
 
@@ -88,8 +78,6 @@ Copepods — unlike terrestrial taxa — often show a **bimodal or reverse LDG**
 ├── copepod_quadratic_fit.csv      # Output data table
 └── README.md
 ```
-
----
 
 ## Acknowledgements
 
